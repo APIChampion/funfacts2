@@ -11,6 +11,7 @@ public class FunFacts2MainActivity extends AppCompatActivity {
     private TextView mfactTextView;
     private Button mShowFactButton;
   //a new comment to make a commit
+    //another comment to make a commit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
