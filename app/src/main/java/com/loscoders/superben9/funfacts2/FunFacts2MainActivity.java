@@ -8,9 +8,9 @@ import android.widget.TextView;
 
 public class FunFacts2MainActivity extends AppCompatActivity {
     //declare the view variables
-    private TextView mfactTextView ;
+    private TextView mfactTextView;
     private Button mShowFactButton;
-
+  //a new comment to make a commit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
