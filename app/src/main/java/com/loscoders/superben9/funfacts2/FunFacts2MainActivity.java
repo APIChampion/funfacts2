@@ -2,8 +2,14 @@ package com.loscoders.superben9.funfacts2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.ButtonBarLayout;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class FunFacts2MainActivity extends AppCompatActivity {
+    //declare the view variables
+    private TextView mfactTextView ;
+    private Button mShowFactButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
