@@ -14,24 +14,25 @@
         android:textColor="@android:color/white"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <EditText
         android:id="@+id/FactTextView"
-        android:layout_width="369dp"
-        android:layout_height="91dp"
+        android:layout_width="341dp"
+        android:layout_height="88dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Ants Stretch Up In the Morning"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="205dp" />
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -52,7 +53,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Show Another Fun Fact"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="557dp" />
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="503dp"
+        tools:ignore="MissingConstraints"/>
 
 </android.support.constraint.ConstraintLayout>
