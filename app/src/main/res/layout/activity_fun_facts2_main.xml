@@ -1,60 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light"
-    tools:context="com.loscoders.superben9.funfacts2.FunFacts2MainActivity">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/holo_green_light"
+                                             tools:context="com.loscoders.superben9.funfacts2.FunFacts2MainActivity"
+                                             tools:layout_editor_absoluteY="25dp"
+                                             tools:layout_editor_absoluteX="0dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="313dp"
+        android:layout_height="165dp"
         android:text="Did You Know?"
         android:textColor="@android:color/white"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        android:id="@+id/textView"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"/>
 
     <EditText
         android:id="@+id/FactTextView"
-        android:layout_width="341dp"
-        android:layout_height="88dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:singleLine="false"
         android:text="Ants Stretch Up In the Morning"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="205dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="9dp"
+        />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="20dp"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="20dp"
+        />
 
     <Button
         android:id="@+id/ShowFactButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="83dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp"
         android:text="Show Another Fun Fact"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="503dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FactTextView"
+        app:layout_constraintVertical_bias="1.0"/>
 
 </android.support.constraint.ConstraintLayout>
